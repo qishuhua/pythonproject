@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "d:\\Software\\anaconda3\\envs\\python36\\python.exe",
+    "files.associations": {
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "limits": "cpp",
+        "stdexcept": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "vector": "cpp",
+        "xmemory": "cpp",
+        "xmemory0": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
+    }
+}
