@@ -18,3 +18,4 @@ if os.path.exists('d:\\datacenter\\campic\\'):
             print "dir", files[i]
         elif os.path.isfile('d:\\datacenter\\campic\\' + files[i]):
             print 'filename', files[i]
+print(11111)
