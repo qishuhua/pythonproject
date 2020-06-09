@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "d:\\Software\\anaconda3\\envs\\python36\\python.exe",
+    "python.pythonPath": "C:\\Users\\admin\\Anaconda2\\envs\\python36\\python.exe",
     "files.associations": {
         "exception": "cpp",
         "initializer_list": "cpp",
