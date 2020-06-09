@@ -19,7 +19,7 @@ def main():
  while(True):
   info = getMemCpu()
   time.sleep(0.2)
-  print info
+  print( info)
   # print "---:",psutil.disk_usage("/").percent
  
 if __name__=="__main__":
