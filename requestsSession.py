@@ -12,3 +12,4 @@ response = session.get("https://www.baidu.com", data=None, timeout=10)
 print(response.status_code)
 print(response.headers)
 print(response.text)
+
