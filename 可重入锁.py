@@ -14,8 +14,8 @@ class MyThread(threading.Thread):
         global num
         if mutex.acquire(1):
             num+=1
-            msg=self.name+'  set num to '+ str(num)
-            print msg
+            msg = self.name+'  set num to '+ str(num)
+            print( msg)
             mutex.acquire()
             mutex.release()
             mutex.release()

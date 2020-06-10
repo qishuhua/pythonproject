@@ -14,4 +14,4 @@
 # )[20:24])
 # print(IP)
 import datetime
-print datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print( datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
