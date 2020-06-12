@@ -17,7 +17,7 @@ try:
     src = open(jsonpath, 'r')
     obj = json.loads(src.read())
     if not obj.has_key('timestamp') or not obj.has_key('base_url') or not obj.has_key('audio_files'):
-        print('key not all exist')
+        exit('key not all exist')
 
     doc = Document()
     root = doc.createElement('MSG')
@@ -39,7 +39,7 @@ try:
     root.appendChild(META)
 
     if not isinstance(obj['audio_files'], list):
-        print('files is not list')
+        exit('audio_files is not list')
     else:
         FQ = doc.createElement('FQ')
         for i in obj['audio_files']:
@@ -50,9 +50,7 @@ try:
                 Group.appendChild(name)
             FQ.appendChild(Group)
         root.appendChild(FQ)
-    print(doc.toxml())
-    fp = open(xmlpath, 'w')
-    doc.writexml(fp, indent='', addindent='\t', newl='\n', encoding="utf-8")
-    fp.close()
+    with open(xmlpath, 'w') as fp:
+        doc.writexml(fp, indent='', addindent='\t', newl='\n', encoding="utf-8")
 except Exception as e:
     exit(e)
